@@ -143,7 +143,7 @@ object Command {
                       ZIO.fail(
                         ValidationError(
                           ValidationErrorType.CommandMismatch,
-                          HelpDoc.p(s"Unexpected command name: ${args.headOption}")
+                          HelpDoc.p(s"Unexpected command name: $head")
                         )
                       )
                   case Nil =>
